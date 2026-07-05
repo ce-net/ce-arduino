@@ -114,7 +114,7 @@ def main() -> int:
                 }, separators=(",", ":")).encode("utf-8"))
             except ce.CeError as e:
                 log.warning("announce failed: %s", e)
-            time.sleep(5)
+            time.sleep(3)
 
     threading.Thread(target=announce_loop, name="announce", daemon=True).start()
     client.serve([CTL_TOPIC], build_handler(registry, authorizer, node_id, client, present_cap))
