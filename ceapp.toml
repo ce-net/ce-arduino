@@ -1,0 +1,22 @@
+[app]
+name = "ce-arduino"
+version = "0.1.0"
+summary = "Arduino/atech port authority + connectivity-layout aggregator (Python script ceapp)"
+runtime = "script"
+provides = ["arduino.ports"]
+
+[script]
+interpreter = "python3"
+entry = "main.py"
+
+# Runs on each board node; module ceapps coordinate their ports through it.
+[daemon]
+enabled = true
+
+[sandbox]
+tier = "none"
+net = "mesh-only"
+
+[deps]
+requires = ["native"]
+capabilities = []
