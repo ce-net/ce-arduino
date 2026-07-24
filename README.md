@@ -6,7 +6,7 @@ port, and you query it for the whole connectivity layout: which module is on whi
 exactly how to wire it. A Python `script`-tier ceapp that runs on each board node.
 
 Hardware model + specs come exactly from the atech SDK catalog (`ce-atech/sdk/catalog`), vendored
-as `atech_hw.py`. See [`ce-sensor-climate/docs/atech-modules.md`](../ce-sensor-climate/docs/atech-modules.md).
+as `atech_hw.py`. See `docs/atech-modules.md` in github.com/ce-net/ce-sensor-climate.
 
 ## API (`ce.arduino/ctl`, cap-gated request/reply, JSON — every request carries `{"cap":..}`)
 
